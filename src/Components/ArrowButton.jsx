@@ -7,10 +7,10 @@ const ArrowButton = ({ direction = "right", onClick, disabled = false }) => {
         <button
             onClick={onClick}
             disabled={disabled}
-            className="p-4 bg-amber-700 hover:bg-amber-600 text-white rounded-full 
+            className="p-4 bg-heliotrope-600 hover:bg-heliotrope-500 text-isabelline rounded-full 
                      shadow-lg transition-all duration-300 transform hover:scale-110 
                      active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed 
-                     disabled:hover:scale-100 z-20"
+                     disabled:hover:scale-100 z-20 border-2 border-heliotrope-300"
             aria-label={isLeft ? "Anterior" : "Siguiente"}
         >
             <svg
