@@ -1,80 +1,131 @@
-Crear una página web tipo “landing page” sencilla y moderna con React y Tailwind CSS, que muestre las secciones básicas de un sitio de presentación de producto, servicio o aplicación.
-El tema (por ejemplo: app de recetas, tienda de ropa, estudio de música, etc.) y las imágenes serán elegidos libremente por cada alumno.
+# 🎮 Mind Over Magic - Landing Page
 
-🧠 Tecnologías y herramientas
-React + Vite para crear el proyecto.
+> Landing page moderna desarrollada con React y Tailwind CSS para presentar el juego de simulación Mind Over Magic.
 
-Tailwind CSS para los estilos y la maquetación.
+---
 
-Se usará useState para manejar cambios dinámicos (como el cambio de imagen o de tarjeta activa).
+## 📋 Descripción del Proyecto
 
-Se usará map() para generar contenido repetitivo (como las imágenes, características o planes de precios).
+Página web tipo "landing page" sencilla y moderna con React y Tailwind CSS, que muestra las secciones básicas de un sitio de presentación del juego **Mind Over Magic** - un juego de simulación de colonias donde construyes y optimizas una escuela de magia.
 
-No se emplearán librerías externas ni hooks adicionales.
+---
 
-⚙️ Estructura general del proyecto
-El proyecto se puede realizar con solo dos archivos principales:
+## 🧠 Tecnologías y Herramientas
 
-App.jsx → contiene toda la estructura y funcionalidad.
+-   **React + Vite** - Para crear el proyecto
+-   **Tailwind CSS** - Para estilos y maquetación
+-   **useState** - Para manejar cambios dinámicos (cambio de imagen, tarjeta activa)
+-   **map()** - Para generar contenido repetitivo (imágenes, características, planes)
 
-data.js → contiene los datos (arrays) que se recorrerán con map().
+> ⚠️ **Nota:** No se emplean librerías externas ni hooks adicionales.
 
-La carpeta /assets/img incluirá las imágenes que el alumno elija (entre 3 y 6 imágenes en total).
+---
 
-🧱 Partes de la web
+## ⚙️ Estructura General del Proyecto
 
-1. Encabezado (Header)
-   Logo (propio o genérico).
+El proyecto se estructura con dos archivos principales:
 
-Menú de navegación con 3 enlaces.
+```
+src/
+├── App.jsx        # Contiene toda la estructura y funcionalidad
+├── data.js        # Contiene los datos (arrays) que se recorren con map()
+└── Assets/
+    └── img/       # Imágenes del proyecto (entre 3 y 6)
+```
 
-Botón principal (“Descargar”, “Entrar”, o según la temática).
+---
 
-Fijo o estático según preferencia.
+## 🧱 Estructura de la Web
 
-2. Sección principal (Hero)
-   Un título llamativo y un subtítulo o descripción breve.
+### 1. 📌 Encabezado (Header)
 
-Dos botones de acción (por ejemplo: “Ver demo”, “Comprar ahora”, etc.).
+-   Logo del juego
+-   Menú de navegación con 3 enlaces
+-   Botón principal de acción
+-   Diseño fijo o estático
 
-Un cuadro a la derecha con un slideshow o carrusel simple de imágenes (mínimo 3 fotos).
+### 2. 🎯 Sección Principal (Hero)
 
-El cambio de imagen se controla con useState.
+-   **Título llamativo** y subtítulo descriptivo
+-   **Dos botones de acción** (Ver demo, Comprar ahora, etc.)
+-   **Slideshow/carrusel** de imágenes (mínimo 3 fotos)
+    -   Cambio de imagen controlado con `useState`
+    -   Indicadores generados con `map()`
 
-Los botones inferiores (indicadores) se generan con map().
+### 3. ⭐ Sección de Características (Features)
 
-3. Sección de características (Features)
-   Imagen o ilustración a la izquierda.
+-   **Imagen/ilustración** a la izquierda
+-   **Lista de 3-4 características** a la derecha
+    -   Cada característica con título y texto corto
+    -   Sistema de resaltado al hacer clic (usando `useState`)
 
-Lista de 3 a 4 características a la derecha (cada una con título y texto corto).
+### 4. 💎 Sección de Precios/Planes (Pricing)
 
-Al hacer clic en una característica, se resalta o cambia el color (usando useState para controlar el elemento activo).
+-   **Cuatro tarjetas** con diferentes planes/niveles
+    -   Generadas con `map()`
+    -   Cada tarjeta muestra:
+        -   Nombre del plan
+        -   Precio
+        -   Botón de acción
+    -   Una tarjeta con estilo destacado
 
-4. Sección de precios o planes (Pricing)
-   Cuatro tarjetas con diferentes planes o niveles (por ejemplo: Básico, Pro, Premium, etc.).
+### 5. 🔗 Pie de Página (Footer)
 
-Cada tarjeta se genera con map().
+-   Texto con derechos reservados
+-   Enlaces simples (Términos, Privacidad, Contacto)
 
-Deben mostrar: nombre del plan, precio y un botón de acción.
+---
 
-Una de las tarjetas debe tener un estilo destacado.
+## 🖼️ Contenido y Diseño
 
-5. Pie de página (Footer)
-   Texto con derechos reservados.
+### Temática
 
-Enlaces simples (por ejemplo: “Términos”, “Privacidad”, “Contacto”).
+**Mind Over Magic** - Juego de simulación de escuela de magia desarrollado por Sparkypants y publicado por Klei Publishing.
 
-🖼️ Contenido y diseño
-Cada alumno elige su temática libremente (app, negocio, evento, videojuego, etc.).
+### Assets
 
-Las imágenes (entre 3 y 6) deben estar dentro de /src/assets/img/.
+-   Imágenes ubicadas en `/src/Assets/img/`
+-   Entre 3 y 6 imágenes relacionadas con el juego
 
-Los colores, tipografía y nombres de secciones son personalizables.
+### Personalización
+
+-   ✅ Colores personalizables
+-   ✅ Tipografía adaptable
+-   ✅ Nombres de secciones configurables
+
+---
+
+## ✨ Criterios de Evaluación
 
 Se valorará:
 
-Claridad visual y consistencia del diseño.
+-   ✅ **Claridad visual** y consistencia del diseño
+-   ✅ **Correcta estructura de Tailwind** (`grid`, `flex`, `gap`, `rounded`, `shadow`, etc.)
+-   ✅ **Uso correcto** de `map()` y `useState`
+-   ✅ **Responsive design**
+-   ✅ **Interactividad** de los componentes
 
-Correcta estructura de Tailwind (grid, flex, gap, rounded, shadow, etc.).
+---
 
-Uso de map y useState correctamente implementados.
+## 🚀 Instalación y Uso
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+```
+
+---
+
+## 📝 Licencia
+
+Proyecto educativo - Mind Over Magic © Sparkypants Studios & Klei Publishing
+
+---
+
+**Desarrollado con ❤️ usando React y Tailwind CSS**
