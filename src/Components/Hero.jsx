@@ -9,12 +9,12 @@ import { bookPages } from "../data";
 
 const Hero = () => {
     return (
-        <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-licorice text-isabelline">
+        <div className="flex flex-col items-center justify-center w-screen bg-licorice text-isabelline">
             <DinamicBackground
                 imageSrc={heroImage}
                 altText="Mind Over Magic Hero"
             />
-            <div className="z-10 h-screen">
+            <div className="z-10 flex flex-col items-center text-center justify-center p-4 space-y-4">
                 <br className="w-96" />
                 <div className="">
                     <h1 className="text-4xl font-bold mt-4 ">

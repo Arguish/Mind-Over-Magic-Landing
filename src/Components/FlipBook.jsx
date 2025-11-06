@@ -205,8 +205,8 @@ const FlipBook = ({
     }
 
     return (
-        <div className="flex items-center justify-center ">
-            <div className="flex items-center gap-8 max-w-7xl w-screen p-4">
+        <div className="flex items-center justify-center w-screen p-4 my-8">
+            <div className="flex items-center gap-8 max-w-7xl ">
                 {/* Botón para retroceder página */}
                 <ArrowButton
                     direction="L"
@@ -215,13 +215,7 @@ const FlipBook = ({
                 />
 
                 {/* Contenedor principal del libro */}
-                <div
-                    className="relative flex rounded-lg shadow-2xl border-4 border-amber-900"
-                    style={{
-                        width: "900px",
-                        height: "600px",
-                    }}
-                >
+                <div className="relative flex rounded-lg shadow-2xl border-4 border-amber-900">
                     {/* PÁGINA ESTÁTICA IZQUIERDA */}
                     <div className="w-1/2 h-full border-r-2 border-amber-800 relative overflow-hidden">
                         <BookPage

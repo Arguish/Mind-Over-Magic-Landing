@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <>
             <img src={barTop} alt="Bar Top" />
-            <div className="flex justify-around items-center sticky top-0 bg-licorice-100 p-2 shadow-md w-full">
+            <div className="flex justify-around items-center sticky top-0 bg-licorice-100 p-2 shadow-md w-full z-20">
                 <img className="max-h-12 rounded-full" src={logo} alt="Logo" />
                 <NavButtons goToSection="hero" />
                 <NavButtons goToSection="features" />
